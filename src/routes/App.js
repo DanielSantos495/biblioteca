@@ -8,7 +8,10 @@ import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
 
 const App = () => (
-  <BrowserRouter>
+  // pones baseman="" la ruta raiz del repositorio o donde esta el servicio
+  // Esto para githubpages que manjera subdominios
+  // por esto también pasa en las imagenes no se ven
+  <BrowserRouter basename='/biblioteca/'>
     <Layout>
       <Switch>
         <Route exact path='/' component={Register} />
